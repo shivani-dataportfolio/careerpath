@@ -373,7 +373,8 @@ app.post('/api/token/', async (req, res) => {
     }
 });
 
-app.get('/api/profile/', authenticateToken, async (req, res) => {
+app.get('/profile/', authenticateToken, async (req, res) => {
+
     try {
         const userProfile = await User.findById(req.user._id).select('-password');
         if (!userProfile) return res.status(404).json({ error: 'User not found' });
@@ -383,7 +384,8 @@ app.get('/api/profile/', authenticateToken, async (req, res) => {
     }
 });
 
-app.post('/api/resume/analyze/', authenticateToken, upload.single('resume'), async (req, res) => {
+app.post('/resume/analyze/', authenticateToken, upload.single('resume'), async (req, res) => {
+    console.log('>>> [HANDSHAKE SUCCESS] STARTING ANALYSIS FOR:', req.user?.email || 'Unknown User');
     console.log(">>> RECEIVED ANALYSIS REQUEST <<<");
     try {
         if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
@@ -716,7 +718,8 @@ app.post('/api/resume/analyze/', authenticateToken, upload.single('resume'), asy
     }
 });
 
-app.post('/api/resume/save/', authenticateToken, async (req, res) => {
+app.post('/resume/save/', authenticateToken, async (req, res) => {
+
     try {
         const updatedUser = await User.findByIdAndUpdate(req.user._id, { $set: req.body }, { new: true });
         res.json({ success: true, user: updatedUser });
@@ -735,7 +738,8 @@ app.post('/api/user/select-role/', authenticateToken, async (req, res) => {
     }
 });
 
-app.get('/api/recommendations/', authenticateToken, async (req, res) => {
+app.get('/recommendations/', authenticateToken, async (req, res) => {
+
     try {
         const user = await User.findById(req.user._id);
         if (!user || !user.roles) return res.json([]);
@@ -772,7 +776,8 @@ app.get('/api/recommendations/', authenticateToken, async (req, res) => {
     }
 });
 
-app.get('/api/skill-gap/:roleId/', authenticateToken, async (req, res) => {
+app.get('/skill-gap/:roleId/', authenticateToken, async (req, res) => {
+
     const { roleId } = req.params;
     try {
         const user = await User.findById(req.user._id);

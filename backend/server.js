@@ -97,27 +97,30 @@ const MOCK_ANALYSIS = {
   }
 };
 
-// PRODUCTION-READY CORS CONFIGURATION
-const allowedOrigins = [
-    'http://localhost:5173', // Local Dev
-    'http://localhost:3000',
-    process.env.FRONTEND_URL // Future Vercel URL
-].filter(Boolean);
-
+// SUPER-FLEXIBLE PRODUCTION CORS
 app.use(cors({
     origin: (origin, callback) => {
-        // Allow requests with no origin (like mobile apps or curl)
         if (!origin) return callback(null, true);
-        if (allowedOrigins.indexOf(origin) !== -1 || allowedOrigins.includes('*')) {
+        
+        const allowedPatterns = [
+            /^http:\/\/localhost:\d+$/,
+            /\.vercel\.app$/,
+            /onrender\.com$/
+        ];
+
+        const isAllowed = allowedPatterns.some(pattern => pattern.test(origin));
+        
+        if (isAllowed) {
             callback(null, true);
         } else {
-            callback(new Error('Not allowed by CORS'));
+            callback(new Error('CORS blocked: ' + origin));
         }
     },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'x-user-email'],
     credentials: true
 }));
+
 
 // Render.com Health Check Endpoint
 app.get('/api/health', (req, res) => res.json({ status: 'OK', timestamp: new Date() }));

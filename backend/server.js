@@ -97,29 +97,14 @@ const MOCK_ANALYSIS = {
   }
 };
 
-// SUPER-FLEXIBLE PRODUCTION CORS
+// BRUTE-FORCE PRODUCTION CORS (Ensures Vercel can always talk to Render)
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin) return callback(null, true);
-        
-        const allowedPatterns = [
-            /^http:\/\/localhost:\d+$/,
-            /\.vercel\.app$/,
-            /onrender\.com$/
-        ];
-
-        const isAllowed = allowedPatterns.some(pattern => pattern.test(origin));
-        
-        if (isAllowed) {
-            callback(null, true);
-        } else {
-            callback(new Error('CORS blocked: ' + origin));
-        }
-    },
+    origin: true, // Dynamically allow whatever origin is making the request
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'x-user-email'],
+    allowedHeaders: '*', // Allow all headers (x-user-email, Authorization, etc.)
     credentials: true
 }));
+
 
 
 // Render.com Health Check Endpoint

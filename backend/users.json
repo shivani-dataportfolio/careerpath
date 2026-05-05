@@ -1,0 +1,355 @@
+[
+  {
+    "id": 1,
+    "email": "shiv2002111hc@gmail.com",
+    "name": "shiv2002111hc",
+    "skills": [],
+    "roles": [
+      {
+        "role": "Software Engineer",
+        "match_score": 34,
+        "matched_skills": [
+          "Python",
+          "Git",
+          "Java"
+        ],
+        "missing_skills": [
+          "Node.js",
+          "C++"
+        ],
+        "total_skills": 5,
+        "matched_count": 3,
+        "reason": "Consistent experience in general software development."
+      },
+      {
+        "role": "Frontend Developer",
+        "match_score": 7,
+        "matched_skills": [
+          "React",
+          "HTML",
+          "CSS"
+        ],
+        "missing_skills": [
+          "JavaScript",
+          "Tailwind",
+          "Next.js"
+        ],
+        "total_skills": 6,
+        "matched_count": 3,
+        "reason": "Strong frontend core, missing modern CSS frameworks."
+      },
+      {
+        "role": "Backend Developer",
+        "match_score": 3,
+        "matched_skills": [
+          "SQL",
+          "Python"
+        ],
+        "missing_skills": [
+          "Node.js",
+          "GraphQL"
+        ],
+        "total_skills": 5,
+        "matched_count": 2,
+        "reason": "Excellent backend foundation with diverse language support."
+      },
+      {
+        "role": "Full Stack Developer",
+        "match_score": 3,
+        "matched_skills": [
+          "React",
+          "SQL"
+        ],
+        "missing_skills": [
+          "Node.js",
+          "System Design"
+        ],
+        "total_skills": 6,
+        "matched_count": 2,
+        "reason": "Highly balanced skills across the full stack."
+      },
+      {
+        "role": "Data Analyst",
+        "match_score": 26,
+        "matched_skills": [
+          "Python",
+          "SQL",
+          "R"
+        ],
+        "missing_skills": [
+          "Tableau"
+        ],
+        "total_skills": 5,
+        "matched_count": 3,
+        "reason": "Good math/logic base, but requires data-specific tool mastery."
+      },
+      {
+        "role": "Data Scientist",
+        "match_score": 68,
+        "matched_skills": [
+          "Python"
+        ],
+        "missing_skills": [
+          "Statistics",
+          "ML Frameworks"
+        ],
+        "total_skills": 7,
+        "matched_count": 1,
+        "reason": "Programming skills present, but technical DS skills missing."
+      },
+      {
+        "role": "ML Engineer",
+        "match_score": 5,
+        "matched_skills": [
+          "Python"
+        ],
+        "missing_skills": [
+          "PyTorch",
+          "TensorFlow"
+        ],
+        "total_skills": 8,
+        "matched_count": 1,
+        "reason": "Requires significant training in ML specific frameworks."
+      },
+      {
+        "role": "DevOps Engineer",
+        "match_score": 1,
+        "matched_skills": [],
+        "missing_skills": [
+          "Docker",
+          "AWS",
+          "Terraform",
+          "Kubernetes"
+        ],
+        "total_skills": 6,
+        "matched_count": 0,
+        "reason": "Solid cloud exposure with modern containerization habits."
+      },
+      {
+        "role": "Cloud Engineer",
+        "match_score": 1,
+        "matched_skills": [],
+        "missing_skills": [
+          "AWS",
+          "Docker",
+          "Azure",
+          "Cloud Architecture"
+        ],
+        "total_skills": 5,
+        "matched_count": 0,
+        "reason": "Strong AWS foundations but needs multi-cloud awareness."
+      },
+      {
+        "role": "MLOps Engineer",
+        "match_score": 1,
+        "matched_skills": [],
+        "missing_skills": [
+          "Docker",
+          "MLFlow",
+          "SageMaker"
+        ],
+        "total_skills": 8,
+        "matched_count": 0,
+        "reason": "Early stage for MLOps; infrastructure core is there but ML ops missing."
+      },
+      {
+        "role": "Business Analyst",
+        "match_score": 3,
+        "matched_skills": [
+          "SQL"
+        ],
+        "missing_skills": [
+          "Excel",
+          "Requirement Gathering"
+        ],
+        "total_skills": 6,
+        "matched_count": 1,
+        "reason": "Technical enough for data side, needs soft-skill and business focus."
+      },
+      {
+        "role": "HR Executive",
+        "match_score": 1,
+        "matched_skills": [],
+        "missing_skills": [
+          "ATS",
+          "Recruitment"
+        ],
+        "total_skills": 6,
+        "matched_count": 0,
+        "reason": "Minimal alignment with human resource management."
+      },
+      {
+        "role": "Digital Marketing",
+        "match_score": 4,
+        "matched_skills": [],
+        "missing_skills": [
+          "SEO",
+          "Google Ads"
+        ],
+        "total_skills": 7,
+        "matched_count": 0,
+        "reason": "Highly technical profile vs creative marketing needs."
+      },
+      {
+        "role": "Project Coordinator",
+        "match_score": 32,
+        "matched_skills": [
+          "Agile"
+        ],
+        "missing_skills": [
+          "Communication",
+          "Scrum"
+        ],
+        "total_skills": 6,
+        "matched_count": 1,
+        "reason": "Natural organized mindset, but needs formal management framework."
+      },
+      {
+        "role": "Operations Analyst",
+        "match_score": 11,
+        "matched_skills": [
+          "SQL"
+        ],
+        "missing_skills": [
+          "Logic",
+          "Six Sigma"
+        ],
+        "total_skills": 5,
+        "matched_count": 1,
+        "reason": "Analytical strength translates well to operations optimization."
+      }
+    ],
+    "candidate": {
+      "name": "NAGELLI SHIVANI (student)",
+      "email": "shivaninagelli4@gmail.com",
+      "location": "Remote",
+      "experience": "1",
+      "education": "Relevant Degree",
+      "skills": [
+        "React",
+        "HTML",
+        "CSS",
+        "Python",
+        "Flask",
+        "Java",
+        "Go",
+        "SQL",
+        "ML",
+        "Python",
+        "R",
+        "Git",
+        "Agile",
+        "Marketing"
+      ]
+    },
+    "dashboard": {
+      "skills_identified": 14,
+      "last_analysis": "Today",
+      "top_role": "Data Scientist",
+      "is_locked": false,
+      "top_roles": [
+        {
+          "role": "Data Scientist",
+          "match_score": 68,
+          "matched_skills": [
+            "Python"
+          ],
+          "missing_skills": [
+            "Statistics",
+            "ML Frameworks"
+          ],
+          "total_skills": 7,
+          "matched_count": 1,
+          "reason": "Programming skills present, but technical DS skills missing."
+        },
+        {
+          "role": "Software Engineer",
+          "match_score": 34,
+          "matched_skills": [
+            "Python",
+            "Git",
+            "Java"
+          ],
+          "missing_skills": [
+            "Node.js",
+            "C++"
+          ],
+          "total_skills": 5,
+          "matched_count": 3,
+          "reason": "Consistent experience in general software development."
+        },
+        {
+          "role": "Project Coordinator",
+          "match_score": 32,
+          "matched_skills": [
+            "Agile"
+          ],
+          "missing_skills": [
+            "Communication",
+            "Scrum"
+          ],
+          "total_skills": 6,
+          "matched_count": 1,
+          "reason": "Natural organized mindset, but needs formal management framework."
+        }
+      ]
+    },
+    "skill_gap_analysis": {
+      "missing_skills": [
+        "System Design",
+        "GraphQL",
+        "Java"
+      ],
+      "learning_focus": "Deepen architectural skills and adopt enterprise languages like Java."
+    },
+    "job_market": {
+      "salary_range": "$90,000 - $140,000",
+      "demand": "High",
+      "platforms": [
+        "LinkedIn",
+        "Indeed",
+        "Glassdoor"
+      ]
+    },
+    "learning_path": {
+      "coursera": [
+        {
+          "title": "Statistics Professional Certification",
+          "url": "https://www.coursera.org/search?query=Statistics"
+        },
+        {
+          "title": "ML Frameworks Professional Certification",
+          "url": "https://www.coursera.org/search?query=ML%20Frameworks"
+        }
+      ],
+      "udemy": [
+        {
+          "title": "Statistics Masterclass: Zero to Hero",
+          "url": "https://www.udemy.com/courses/search/?q=Statistics"
+        },
+        {
+          "title": "ML Frameworks Masterclass: Zero to Hero",
+          "url": "https://www.udemy.com/courses/search/?q=ML%20Frameworks"
+        }
+      ],
+      "edx": [
+        {
+          "title": "MicroMasters in Statistics",
+          "url": "https://www.edx.org/search?q=Statistics"
+        },
+        {
+          "title": "MicroMasters in ML Frameworks",
+          "url": "https://www.edx.org/search?q=ML%20Frameworks"
+        }
+      ]
+    },
+    "last_analysis": "Today"
+  },
+  {
+    "id": 2,
+    "email": "shinynagelli@gmail.com",
+    "name": "shinynagelli",
+    "skills": [],
+    "roles": []
+  }
+]

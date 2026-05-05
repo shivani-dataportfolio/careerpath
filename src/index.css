@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F9FBFC] text-slate-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-soft;
+  }
+  
+  .premium-card {
+    @apply bg-white rounded-2xl border border-slate-100 shadow-premium transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl transition-colors text-slate-500 hover:bg-primary-50 hover:text-primary-600;
+  }
+
+  .nav-link-active {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-50 text-primary-600 font-medium;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-xl font-medium transition-all duration-200 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 shadow-sm shadow-primary-200;
+  }
+
+  .btn-outline {
+    @apply border border-slate-200 text-slate-600 hover:bg-slate-50;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600;
+  }
+}

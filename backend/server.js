@@ -107,8 +107,15 @@ app.use(cors({
 
 
 
-// Render.com Health Check Endpoint
-app.get('/api/health', (req, res) => res.json({ status: 'OK', timestamp: new Date() }));
+// Render.com Health Check Endpoint (Includes DB Status)
+app.get('/api/health', (req, res) => {
+    const dbStatus = mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected';
+    res.json({ 
+        status: 'OK', 
+        database: dbStatus,
+        timestamp: new Date() 
+    });
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

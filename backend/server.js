@@ -9,6 +9,7 @@ const path = require('path');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const mongoose = require('mongoose');
 
 // DB and Models
 const connectDB = require('./config/db');

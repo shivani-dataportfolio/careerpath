@@ -56,7 +56,7 @@ const Home = () => {
                 <CardContent className="p-8 pt-2">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                         {[
-                            { label: 'Avg Tech Salary', value: '$115k', sub: '+8% YoY', color: 'text-emerald-600', bg: 'bg-emerald-50' },
+                            { label: 'Avg Tech Salary', value: '₹12L', sub: '+12% YoY', color: 'text-emerald-600', bg: 'bg-emerald-50' },
                             { label: 'Open Tech Roles', value: '2.4M+', sub: 'Globally', color: 'text-blue-600', bg: 'bg-blue-50' },
                             { label: 'AI/ML Demand', value: '↑ 41%', sub: 'YoY growth', color: 'text-indigo-600', bg: 'bg-indigo-50' },
                             { label: 'Remote Jobs', value: '58%', sub: 'Of listings', color: 'text-orange-600', bg: 'bg-orange-50' },

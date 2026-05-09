@@ -87,7 +87,7 @@ const MOCK_ANALYSIS = {
     "learning_focus": "Deepen architectural skills and adopt enterprise languages like Java."
   },
   "job_market": {
-    "salary_range": "$90,000 - $140,000",
+    "salary_range": "₹12,00,000 - ₹35,00,000",
     "demand": "High",
     "platforms": ["LinkedIn", "Indeed", "Glassdoor"]
   },
@@ -230,7 +230,7 @@ Analyze the resume text and produce a DYNAMIC, SEMANTIC JSON response that refle
    - "explanations": A map of skill name to a concise reason why it's required for this role.
    - "match_score": Initial estimate (will be refined by backend math).
 5. **Skill Gap Intelligence**: Identify gaps and rank them by importance.
-6. **Job Market**: Real-world salary ranges and market demand trends.
+6. **Job Market**: Real-world salary ranges in Indian Rupees (INR) with ₹ symbol and market demand trends.
 
 FINAL JSON FORMAT
 -----------------------------------
@@ -249,7 +249,7 @@ FINAL JSON FORMAT
     } 
   ],
   "skill_gap_analysis": { "missing_skills": [], "learning_focus": "" },
-  "job_market": { "salary_range": "", "demand": "", "platforms": ["LinkedIn", "Indeed"] },
+  "job_market": { "salary_range": "₹XX,XX,XXX - ₹XX,XX,XXX", "demand": "", "platforms": ["LinkedIn", "Indeed"] },
   "learning_path": { "coursera": [], "udemy": [], "edx": [] }
 }
 
